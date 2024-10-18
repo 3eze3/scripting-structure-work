@@ -1,10 +1,6 @@
-import { makeStructure } from "../utils/makeStructure.mjs"
-const files = {}
+import { makeGeneralStructure } from "../utils/common.mjs"
 
-function getfileName() {
-	const proyect = "Ejemplo"
-	return proyect
-}
+const files = {}
 
 function setFileName(root) {
 	files[root] = [
@@ -18,15 +14,7 @@ function setFileName(root) {
 		"README.md",
 	]
 }
+
 export async function aprendizaje() {
-	const fileName = getfileName()
-	setFileName(fileName)
-	try {
-		const promises = Array.from(makeStructure(files))
-		await Promise.all(promises)
-	} catch (error) {
-		console.error(
-			`\n[!] Error al procesar el arreglo de promesas!\n ${error} `
-		)
-	}
+	await makeGeneralStructure(files, setFileName)
 }
