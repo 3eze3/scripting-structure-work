@@ -4,8 +4,9 @@ export function help() {
 	console.log("[+] -h: Help ")
 	console.log("[+] -a: Aprendizaje -> (Practica de componente|concepto)")
 	console.log("[+] -v: Vanilla -> (Html + Css/Scss + JS)")
-	console.log("[+] -r: React ->(Estructura + TS)")
-	console.log("[+] -i: Integrador -> (Hacking Etico)")
-	console.log("[+] -c: Contenido -> (Estructura de videos)\n")
+	console.log("[+] -r: React -> (Estructura Modular)")
+	console.log("[+] -n: Node -> (Estructura + TS)")
+	console.log("[+] -i: Integrador -> (enfocado a Hacking Etico)")
+	console.log("[+] -c: Contenido -> (Estructura para videos)\n")
 	exit(1)
 }
