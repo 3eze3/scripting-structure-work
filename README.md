@@ -8,188 +8,246 @@ Este proyecto tiene como objetivo crear un script en Node.js que automatiza la e
 -   **Estandarizar estructuras**: Asegura que cada nuevo proyecto siga una estructura predefinida y coherente.
 -   **Facilitar la organización**: Mantiene todos tus archivos y carpetas organizados de manera eficiente.
 
-## Estructura de carptas
-
-### Node Js:
-
-project-root/
-│
-├── app.js # Main application entry point
-├── .env # Environment variables
-│
-└── src/
-├── routes/ # API endpoints (e.g., users.js, products.js)
-│ └── users.js
-├── controllers/ # Handles business logic (e.g., userController.js)
-│ └── userController.js
-├── models/ # Database models and schemas
-│ └── userModel.js
-├── services/ # Third-party integrations (e.g., userService.js)
-│ └── userService.js
-├── utils/ # Utility and helper functions
-│ └── validateInput.js
-├── middlewares/ # Authentication, logging, error handling
-│ └── authMiddleware.js
-└── tests/ # Unit and integration tests
-└── user.test.js
-
-### REACT Js:
-
-src/
-|-- components/ # Common reusable components
-| |-- Avatar/
-| | |-- avatar.jsx
-| | |-- avatar.css
-| | |-- avatar.test.js
-| |-- Button/
-| | |-- button.jsx
-| | |-- button.css
-| | |-- button.test.js
-| |-- TextField/
-| | |-- TextField.jsx
-| | |-- TextField.css
-| | |-- TextField.test.js
-|
-|-- contexts/ # Global state management using React Context API
-| |-- UserContext/
-| | |-- UserContext.js
-|
-|-- hooks/ # Custom reusable hooks
-| |-- useMediaQuery/
-| | |-- useMediaQuery.js
-| | |-- useMediaQuery.test.js # Optional: Unit tests for custom hooks
-|
-|-- features/ # Feature-based organization for each major section
-| |-- Home/
-| | |-- components/
-| | | |-- SomeUserProfileComponent/
-| | | | |-- SomeUserProfileComponent.jsx
-| | | | |-- SomeUserProfileComponent.css
-| | | | |-- SomeUserProfileComponent.test.js
-| | |-- services/ # Feature-specific services (API calls, etc.)
-| | | |-- homeService.js
-| | | |-- homeService.test.js
-| | |-- hooks/ # Feature-specific custom hooks
-| | | |-- useHomeData.js
-| | | |-- useHomeData.test.js
-| | |-- views/ # Views or page-level components
-| | | |-- HomeView.jsx
-| | |-- pages/ # Pages, often linked to routes
-| | | |-- HomePage.jsx
-| |-- index.js # Entry point for the feature
-|
-|-- services/ # Global service (API calls, etc.)
-| |-- some-common-service/
-| | |-- index.js # Service logic
-| | |-- some-common-service.js
-| | |-- index.test.js
-|
-|-- utils/ # Utility functions, helpers, etc.
-| |-- some-common-util/
-| | |-- index.js
-| | |-- index.test.js
-|
-|-- styles/ # Global styles (optional)
-| |-- global.css # Application-wide styles
-| |-- variables.css # Global variables for theming
-|
-|-- App.jsx # Main application entry point
-|-- index.js # Application bootstrap and root rendering
-|-- routes.js # Centralized routing for the app (if using React Router)
-
-### Integrador con Hacking Etico :
-
-project-root/
-│
-├── backend/ # Backend for handling hacking logic and API
-│ ├── src/
-│ │ ├── routes/
-│ │ │ └── api.js # API routes for both frontend and backend
-│ │ ├── controllers/ # Red team attack controllers (e.g., phishing)
-│ │ │ └── attackController.js
-│ │ ├── models/ # Database for storing logs, targets
-│ │ │ └── targetModel.js
-│ │ ├── services/ # Attack scripts and services
-│ │ │ └── phishingService.js # Example: Phishing attacks
-│ │ ├── utils/ # Helper utilities for Red Team attacks
-│ │ │ └── networkUtils.js # Example: Network scanning utilities
-│ │ └── middlewares/ # Authentication, logging, etc.
-│ │ └── authMiddleware.js
-│ ├── app.js # Backend entry point
-│ ├── package.json # Backend dependencies
-│ ├── .env # Environment variables
-│ └── node_modules/
-│
-├── frontend/ # React.js frontend
-│ ├── public/
-│ │ └── index.html
-│ ├── src/
-│ │ ├── components/ # React components for UI
-│ │ │ └── AttackOverview.js # Overview of ongoing attacks
-│ │ ├── hooks/ # Custom hooks for attack data
-│ │ ├── services/ # Frontend services to fetch data from backend
-│ │ │ └── attackApiService.js # Fetching attack data (API)
-│ │ ├── styles/ # CSS and design
-│ │ └── App.js # Main app component
-│ └── package.json # Frontend dependencies
-│
-├── red-team-scripts/ # Offensive scripts for Red Team attacks
-│ ├── phishing/ # Phishing attack scripts
-│ │ └── phishing.js # Sample phishing attack
-│ ├── network-scan/ # Network scanning and reconnaissance
-│ │ └── nmapScan.sh # Script using Nmap for recon
-│ └── exploitations/ # Exploit scripts
-│ └── exploitVulnerability.js # Example of vulnerability exploitation
-│
-├── security-logs/ # Logs of attacks and responses
-│ └── logs.json # Store logs of attack details
-│
-└── tests/ # Testing folder
-├── backend-tests/ # Tests for backend attack logic
-│ └── attackController.test.js
-├── frontend-tests/ # Unit tests for React components
-│ └── AttackOverview.test.js
-└── penetration-tests/ # Security penetration testing scripts
-└── testPhishing.sh # Automated penetration tests
-
 ## Objetivos Personales:
 
 -   [ ] Aprender a utilizar Node.js para la manipulación de archivos y carpetas.
 -   [ ] Desarrollar un script funcional que sirva como base para futuros proyectos.
 -   [ ] Mejorar la eficiencia en la creación de nuevos proyectos personales.
 -   [ ] Documentar el proceso y las lecciones aprendidas para compartir con la comunidad.
+-   [ ] Investigar sobre mejores prácticas en la estructuración de proyectos en Node.js y React.js.
 
-## Tecnologías 🔧
+## Tecnologías Utilizadas 🔧
 
-**Node.js**:
+### Node.js
 
--   Entorno de ejecución de JavaScript del lado del servidor que permite crear aplicaciones de red escalables.
+-   **Descripción**: Entorno de ejecución de JavaScript del lado del servidor que permite crear aplicaciones de red escalables y rápidas. Node.js utiliza un modelo de I/O sin bloqueo y orientado a eventos que lo hace ideal para aplicaciones de alta concurrencia.
 
-**Filesystem (fs)**:
+### Módulos de Node.js
 
--   Módulo de Node.js que permite interactuar con el sistema de archivos, incluyendo la creación de carpetas y archivos.
+-   **Filesystem (fs)**: Módulo que permite interactuar con el sistema de archivos, incluyendo la creación y manipulación de carpetas y archivos.
+-   **Path**: Módulo utilizado para manejar y transformar rutas de archivos y directorios, lo que facilita la gestión de las rutas en proyectos complejos.
 
-**Path**:
+## Estructura de carpetas
 
--   Módulo de Node.js utilizado para manejar y transformar rutas de archivos y directorios.
+### Node Js:
+
+project-root/
+│
+├── app.js # Punto de entrada principal de la aplicación
+├── .env # Variables de entorno
+│
+└── src/
+├── routes/ # Puntos finales de la API (ej.: users.js, products.js)
+│ └── users.js
+├── controllers/ # Maneja la lógica de negocio (ej.: userController.js)
+│ └── userController.js
+├── models/ # Modelos y esquemas de base de datos
+│ └── userModel.js
+├── services/ # Integraciones de terceros (ej.: userService.js)
+│ └── userService.js
+├── utils/ # Funciones utilitarias y helpers
+│ └── validateInput.js
+├── middlewares/ # Autenticación, logging, manejo de errores
+│ └── authMiddleware.js
+└── tests/ # Pruebas unitarias e integración
+└── user.test.js
+
+### React Js:
+
+src/
+|-- components/ # Componentes reutilizables comunes
+| |-- Avatar/ # Componente Avatar
+| | |-- avatar.jsx
+| | |-- avatar.css
+| | |-- avatar.test.js
+| |-- Button/ # Componente Botón
+| | |-- button.jsx
+| | |-- button.css
+| | |-- button.test.js
+| |-- TextField/ # Componente Campo de Texto
+| | |-- TextField.jsx
+| | |-- TextField.css
+| | |-- TextField.test.js
+|
+|-- contexts/ # Gestión de estado global utilizando la API de Contexto de React
+| |-- UserContext/
+| | |-- UserContext.js
+|
+|-- hooks/ # Hooks reutilizables personalizados
+| |-- useMediaQuery/
+| | |-- useMediaQuery.js
+| | |-- useMediaQuery.test.js # Pruebas unitarias opcionales para hooks personalizados
+|
+|-- features/ # Organización basada en características
+| |-- Home/
+| | |-- components/ # Componentes de usuario
+| | | |-- SomeUserProfileComponent/
+| | | | |-- SomeUserProfileComponent.jsx
+| | | | |-- SomeUserProfileComponent.css
+| | | | |-- SomeUserProfileComponent.test.js
+| | |-- services/ # Servicios específicos de la característica
+| | | |-- homeService.js
+| | | |-- homeService.test.js
+| | |-- hooks/ # Hooks personalizados específicos de la característica
+| | | |-- useHomeData.js
+| | | |-- useHomeData.test.js
+| | |-- views/ # Componentes a nivel de vista o página
+| | | |-- HomeView.jsx
+| | |-- pages/ # Páginas, a menudo vinculadas a rutas
+| | | |-- HomePage.jsx
+| |-- index.js # Punto de entrada para la característica
+|
+|-- services/ # Servicios globales (API, etc.)
+| |-- some-common-service/
+| | |-- index.js # Lógica del servicio
+| | |-- some-common-service.js
+| | |-- index.test.js
+|
+|-- utils/ # Funciones utilitarias, helpers, etc.
+| |-- some-common-util/
+| | |-- index.js
+| | |-- index.test.js
+|
+|-- styles/ # Estilos globales (opcional)
+| |-- global.css # Estilos aplicables a toda la aplicación
+| |-- variables.css # Variables globales para tematización
+|
+|-- App.jsx # Punto de entrada principal de la aplicación
+|-- index.js # Inicialización de la aplicación y renderizado raíz
+|-- routes.js # Enrutamiento centralizado para la aplicación (si se utiliza React Router)
+
+### Integrador Hacking Etico:
+
+project-root/
+│
+├── backend/ # Backend para manejar la lógica de hacking y API
+│ ├── src/
+│ │ ├── routes/
+│ │ │ └── api.js # Rutas API para frontend y backend
+│ │ ├── controllers/ # Controladores de ataques del Red Team (ej.: phishing)
+│ │ │ └── attackController.js
+│ │ ├── models/ # Base de datos para almacenar logs, objetivos
+│ │ │ └── targetModel.js
+│ │ ├── services/ # Scripts y servicios de ataque
+│ │ │ └── phishingService.js # Ejemplo: Ataques de phishing
+│ │ ├── utils/ # Utilidades auxiliares para ataques del Red Team
+│ │ │ └── networkUtils.js # Ejemplo: Utilidades de escaneo de red
+│ │ └── middlewares/ # Autenticación, logging, etc.
+│ │ └── authMiddleware.js
+│ ├── app.js # Punto de entrada del backend
+│ ├── package.json # Dependencias del backend
+│ ├── .env # Variables de entorno
+│ └── node_modules/
+│
+├── frontend/ # Frontend de React.js
+│ ├── public/
+│ │ └── index.html
+│ ├── src/
+│ │ ├── components/ # Componentes de React para la UI
+│ │ │ └── AttackOverview.js # Resumen de ataques en curso
+│ │ ├── hooks/ # Hooks personalizados para datos de ataque
+│ │ ├── services/ # Servicios de frontend para obtener datos del backend
+│ │ │ └── attackApiService.js # Obtención de datos de ataque (API)
+│ │ ├── styles/ # CSS y diseño
+│ │ └── App.js # Componente principal de la aplicación
+│ └── package.json # Dependencias del frontend
+│
+├── red-team-scripts/ # Scripts ofensivos para ataques del Red Team
+│ ├── phishing/ # Scripts de ataque de phishing
+│ │ └── phishing.js # Ejemplo de ataque de phishing
+│ ├── network-scan/ # Escaneo de red y reconocimiento
+│ │ └── nmapScan.sh # Script que utiliza Nmap para reconocimiento
+│ └── exploitations/ # Scripts de explotación
+│ └── exploitVulnerability.js # Ejemplo de explotación de vulnerabilidad
+│
+├── security-logs/ # Logs de ataques y respuestas
+│ └── logs.json # Almacena detalles de los registros de ataque
+│
+└── tests/ # Carpeta de pruebas
+├── backend-tests/ # Pruebas para la lógica de ataque del backend
+│ └── attackController.test.js
+├── frontend-tests/ # Pruebas unitarias para componentes de React
+│ └── AttackOverview.test.js
+└── penetration-tests/ # Scripts de pruebas de penetración de seguridad
+└── testPhishing.sh # Pruebas automatizadas de penetración
+
+## Ejemplos de Configuración de Archivos
+
+```js
+import { createProjectStructure } from "../utils/common.mjs"
+
+const files = {}
+
+function setFileName(root) {
+	files[root] = [
+		"img",
+		"html",
+		"html/index.html",
+		"css",
+		"css/style.css",
+		"js",
+		"js/main.js",
+		"README.md",
+	]
+}
+
+export async function aprendizaje() {
+	await createProjectStructure(files, setFileName)
+}
+```
+
+```js
+import { createProjectStructure } from "../utils/common.mjs"
+
+const files = {}
+
+function setFileName(root) {
+	files[root] = [
+		"app.js",
+		".env",
+		"src",
+		"src/routes",
+		"src/routes/users.js",
+		"src/controller",
+		"src/controller/userController.js",
+		"src/models",
+		"src/models/userModel.js",
+		"src/services",
+		"src/services/userServices.js",
+		"src/utils",
+		"src/utils/validateInput.js",
+		"src/middlewares",
+		"src/middlewares/authMiddleware.js",
+		"src/tests",
+		"src/tests/user.test.js",
+	]
+}
+
+export async function node() {
+	await createProjectStructure(files, setFileName)
+}
+```
 
 ## Instalación y Uso 🔌
 
-1. Clona el repositorio:
+### Pasos para ejecutar el script:
 
-```bash
-   git clone https://github.com/3eze3/page.git
-```
+1.  **Clonar el repositorio**:
 
-2. Navega al directorio del proyecto:
+    ```bash
+    git clone https://github.com/3eze3/make_structure_projects.git
+    ```
 
-```bash
+2.  Navegar al directorio del proyecto:
+    ```bash
     cd page
-```
+    ```
+3.  Ejecutar el script con uno de los parámetros disponibles:
 
-3. Ejecuta el script con uno de los parámetros disponibles:
-
-```bash
-    node index.js -a  # Para crear la estructura de un proyecto de aprendizaje
-    node index.js -v  # Para crear la estructura de un proyecto vanilla
-```
+        ```bash
+        node index.js -a # Para crear la estructura de un proyecto de aprendizaje
+        node index.js -v # Para crear la estructura de un proyecto vanilla
+        node index.js -n # Para crear la estructura de un proyecto REACT Js
+        node index.js -r # Para crear la estructura de un proyecto NODE JS
+        node index.js -i # Para crear la estructura de un proyecto Integrador con Hacking Etico
+        ```
