@@ -16,8 +16,6 @@ project-root/
 │
 ├── app.js # Main application entry point
 ├── .env # Environment variables
-├── package.json # Project dependencies and scripts
-├── node_modules/ # Installed dependencies
 │
 └── src/
 ├── routes/ # API endpoints (e.g., users.js, products.js)
@@ -37,24 +35,67 @@ project-root/
 
 ### REACT Js:
 
-project-root/
-│
-├── public/ # Public assets like index.html
-│ └── index.html
-├── src/
-│ ├── components/ # React components
-│ │ └── Navbar.js
-│ ├── hooks/ # Custom hooks (optional)
-│ │ └── useAuth.js
-│ ├── services/ # API calls or logic (optional)
-│ │ └── apiService.js
-│ ├── styles/ # CSS or styled-components
-│ │ └── Navbar.css
-│ ├── App.js # Main app component
-│ └── index.js # App entry point
-│
-├── package.json # Project dependencies and scripts
-└── node_modules/ # Installed dependencies
+src/
+|-- components/ # Common reusable components
+| |-- Avatar/
+| | |-- avatar.jsx
+| | |-- avatar.css
+| | |-- avatar.test.js
+| |-- Button/
+| | |-- button.jsx
+| | |-- button.css
+| | |-- button.test.js
+| |-- TextField/
+| | |-- TextField.jsx
+| | |-- TextField.css
+| | |-- TextField.test.js
+|
+|-- contexts/ # Global state management using React Context API
+| |-- UserContext/
+| | |-- UserContext.js
+|
+|-- hooks/ # Custom reusable hooks
+| |-- useMediaQuery/
+| | |-- useMediaQuery.js
+| | |-- useMediaQuery.test.js # Optional: Unit tests for custom hooks
+|
+|-- features/ # Feature-based organization for each major section
+| |-- Home/
+| | |-- components/
+| | | |-- SomeUserProfileComponent/
+| | | | |-- SomeUserProfileComponent.jsx
+| | | | |-- SomeUserProfileComponent.css
+| | | | |-- SomeUserProfileComponent.test.js
+| | |-- services/ # Feature-specific services (API calls, etc.)
+| | | |-- homeService.js
+| | | |-- homeService.test.js
+| | |-- hooks/ # Feature-specific custom hooks
+| | | |-- useHomeData.js
+| | | |-- useHomeData.test.js
+| | |-- views/ # Views or page-level components
+| | | |-- HomeView.jsx
+| | |-- pages/ # Pages, often linked to routes
+| | | |-- HomePage.jsx
+| |-- index.js # Entry point for the feature
+|
+|-- services/ # Global service (API calls, etc.)
+| |-- some-common-service/
+| | |-- index.js # Service logic
+| | |-- some-common-service.js
+| | |-- index.test.js
+|
+|-- utils/ # Utility functions, helpers, etc.
+| |-- some-common-util/
+| | |-- index.js
+| | |-- index.test.js
+|
+|-- styles/ # Global styles (optional)
+| |-- global.css # Application-wide styles
+| |-- variables.css # Global variables for theming
+|
+|-- App.jsx # Main application entry point
+|-- index.js # Application bootstrap and root rendering
+|-- routes.js # Centralized routing for the app (if using React Router)
 
 ### Integrador con Hacking Etico :
 
