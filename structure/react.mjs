@@ -1,0 +1,66 @@
+import { createProjectStructure } from "../utils/common.mjs"
+
+const files = {}
+
+function setFileName(root) {
+	files[root] = [
+		"build",
+		"build/index.html",
+		"src",
+		"src/app.jsx",
+		"src/index.js",
+		"src/routes.js",
+		"src/components",
+		"src/components/Avatar",
+		"src/components/Avatar/avatar.jsx",
+		"src/components/Avatar/avatar.css",
+		"src/components/Avatar/avatar.test.js",
+		"src/components/Button",
+		"src/components/Button/button.jsx",
+		"src/components/Button/button.css",
+		"src/components/Button/button.test.js",
+		"src/components/TextField",
+		"src/components/TextField/textfield.jsx",
+		"src/components/TextField/textfield.css",
+		"src/components/TextField/textfield.test.js",
+		"src/contexts",
+		"src/contexts/UserContext",
+		"src/contexts/UserContext/userContext.js",
+		"src/contexts/UserContext/userContext.test.js",
+		"src/hooks",
+		"src/hooks/useMediaQuery/",
+		"src/hooks/useMediaQuery/useMediaQuery.js",
+		"src/hooks/useMediaQuery/useMediaQuery.test.js",
+		"src/features",
+		"src/features/home",
+		"src/features/home/components",
+		"src/features/home/components/SomeUserProfileComponent",
+		"src/features/home/components/SomeUserProfileComponent/someUserProfile.jsx",
+		"src/features/home/components/SomeUserProfileComponent/someUserProfile.css",
+		"src/features/home/components/SomeUserProfileComponent/someUserProfile.test.js",
+		"src/features/home/services",
+		"src/features/home/services/homeService.js",
+		"src/features/home/services/homeServices.test.js",
+		"src/features/home/hooks",
+		"src/features/home/hooks/useHomeData.js",
+		"src/features/home/hooks/useHomeData.test.js",
+		"src/features/home/views",
+		"src/features/home/views/homeView.jsx",
+		"src/features/home/pages",
+		"src/features/home/pages/homePage.jsx",
+		"src/features/index.js",
+		"src/services",
+		"src/services/some_common_service",
+		"src/services/some_common_service/index.js",
+		"src/services/some_common_service/index.test.js",
+		"src/services/some_common_service/commonSevices.js",
+		"src/utils",
+		"src/utils/some_common_util",
+		"src/utils/some_common_util/index.js",
+		"src/utils/some_common_util/index.test.js",
+	]
+}
+
+export async function react() {
+	await createProjectStructure(files, setFileName)
+}

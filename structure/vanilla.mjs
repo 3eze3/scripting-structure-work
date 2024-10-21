@@ -1,4 +1,4 @@
-import { makeGeneralStructure } from "../utils/common.mjs"
+import { createProjectStructure } from "../utils/common.mjs"
 
 const files = {}
 function setFileName(root) {
@@ -16,21 +16,25 @@ function setFileName(root) {
 		"build/assest/images/icons",
 		"build/assest/images/ilustration",
 		"src",
-		"src/abstract",
-		"src/layout",
-		"src/components",
-		"src/base",
-		"src/style.scss",
-		"src/base/_reset.scss",
-		"src/base/_fonts.scss",
-		"src/abstract/_mixins.scss",
-		"src/abstract/_variables.scss",
+		"src/scss",
+		"src/scss/abstract",
+		"src/scss/layout",
+		"src/scss/components",
+		"src/scss/base",
+		"src/scss/style.scss",
+		"src/scss/base/_reset.scss",
+		"src/scss/base/_fonts.scss",
+		"src/scss/abstract/_mixins.scss",
+		"src/scss/abstract/_variables.scss",
+		"src/ts",
+		"src/ts/main.ts",
 		"README.md",
 		"linkedin.md",
 		".gitignore",
+		"tsconfig.json",
 	]
 }
 
 export async function vanilla() {
-	await makeGeneralStructure(files, setFileName)
+	await createProjectStructure(files, setFileName)
 }

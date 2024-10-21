@@ -1,4 +1,4 @@
-import { makeGeneralStructure } from "../utils/common.mjs"
+import { createProjectStructure } from "../utils/common.mjs"
 
 const files = {}
 
@@ -16,5 +16,5 @@ function setFileName(root) {
 }
 
 export async function aprendizaje() {
-	await makeGeneralStructure(files, setFileName)
+	await createProjectStructure(files, setFileName)
 }
