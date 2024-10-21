@@ -91,19 +91,31 @@ export async function node() {
 1.  **Clonar el repositorio**:
 
     ```bash
-    git clone https://github.com/3eze3/make_structure_projects.git
+    git clone https://github.com/3eze3/scripting-structure-work.git
     ```
 
 2.  Navegar al directorio del proyecto:
     ```bash
-    cd page
+    cd scripting-structure-work/
     ```
 3.  Ejecutar el script con uno de los parámetros disponibles:
 
-        ```bash
+    ```bash
         node index.js -a # Para crear la estructura de un proyecto de aprendizaje
+    ```
+
+    ```bash
         node index.js -v # Para crear la estructura de un proyecto vanilla
+    ```
+
+    ```bash
         node index.js -n # Para crear la estructura de un proyecto REACT Js
+    ```
+
+    ```bash
         node index.js -r # Para crear la estructura de un proyecto NODE JS
+    ```
+
+    ```bash
         node index.js -i # Para crear la estructura de un proyecto Integrador con Hacking Etico
-        ```
+    ```
