@@ -1,4 +1,5 @@
 import { join } from "node:path"
+// Rutas absolutas 
 const styles = "./Templates/resetStyles/scss"
 const publicaciones = "./Templates/publicaciones"
 const config = "./Templates/tsconfig"
