@@ -16,6 +16,10 @@ Este proyecto tiene como objetivo crear un script en Node.js que automatiza la e
 -   [ ] Documentar el proceso y las lecciones aprendidas para compartir con la comunidad.
 -   [ ] Investigar sobre mejores prácticas en la estructuración de proyectos en Node.js y React.js.
 
+## Archivos Templates:
+
+Para poder poner tus propios archivos, en el script ya encontrarás la carpeta Template si la quieres usar, o puedes crear tu propia carpeta. **Lo importante es:** que en el archivo de rutas pongas las rutas absolutas de tus archivos; de esa forma no tendrás conflicto con el path.
+
 ## Tecnologías Utilizadas 🔧
 
 ### Node.js
