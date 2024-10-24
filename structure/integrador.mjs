@@ -27,7 +27,6 @@ function setFileName(root) {
 		"frontend/public",
 		"frontend/public/index.html",
 		"frontend/src",
-		"frontend/src/components/",
 		"frontend/src/components/AttackOverview.js",
 		"frontend/src/hooks/",
 		"frontend/src/services/",
@@ -54,6 +53,9 @@ function setFileName(root) {
 		"tests/frontend-tests/AttackOverview.test.js",
 		"tests/penetration-tests/",
 		"tests/penetration-tests/testPhishing.sh",
+		"REAME.md",
+		"linkedin.md",
+		".gitignore",
 	]
 }
 
